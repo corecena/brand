@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NCE Educational Consultants Uganda</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Top Bar -->
+  <header class="top-bar">
+    <div class="logo">
+      <img src="/images/logo.jpg" alt="NCE Logo">
+      <span>NCE Educational Consultants Uganda</span>
+    </div>
+
+    <!-- Hamburger Menu Icon -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <nav class="nav-menu" id="nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="subjects.html">Subjects</a></li>
+        <li><a href="#">Tutors</a></li>
+        <li><a href="learning-space.html">Learning Resources</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html" class="btn-login">Login / Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Empowering Education Through Digital Learning</h1>
+      <p>Connecting students and tutors across Uganda for a brighter future.</p>
+      <a href="#" class="cta-btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Subjects Section -->
+  <section class="subjects">
+    <h2>Popular Subjects</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="/images/math.jpg" alt="Mathematics">
+        <h3>Mathematics</h3>
+        <p>Build a strong foundation in problem-solving, algebra, and geometry with expert tutors.</p>
+      </div>
+      <div class="card">
+        <img src="/images/science.jpg" alt="Science">
+        <h3>Science</h3>
+        <p>Explore physics, chemistry, and biology through engaging, interactive lessons.</p>
+      </div>
+      <div class="card">
+        <img src="/images/english.jpg" alt="English">
+        <h3>English Language</h3>
+        <p>Improve your grammar, vocabulary, and writing skills with professional English tutors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tutors Section -->
+  <section class="tutors">
+    <h2>Meet Our Tutors</h2>
+    <div class="card-grid">
+      <div class="card tutor-card">
+        <img src="/images/teacher3.jpg" alt="Tutor 1">
+        <h3>Ms. Grace K.</h3>
+        <p>Specialist in English & Literature. Over 5 years of online tutoring experience.</p>
+      </div>
+      <div class="card tutor-card">
+        <img src="/images/teacher1.jpg" alt="Tutor 2">
+        <h3>Mr. Daniel O.</h3>
+        <p>Math & Physics tutor passionate about helping learners achieve top grades.</p>
+      </div>
+      <div class="card tutor-card">
+        <img src="/images/teacher2.jpg" alt="Tutor 3">
+        <h3>Ms. Sarah N.</h3>
+        <p>Science educator focused on practical learning and student engagement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="call-to-action">
+    <div class="cta-container">
+      <h2>Ready to Take the Next Step?</h2>
+      <p>Join our growing community of students and tutors transforming education in Uganda.</p>
+      <div class="cta-buttons">
+        <a href="#" class="cta-btn primary">Enroll Today</a>
+        <a href="#" class="cta-btn secondary">Join as a Tutor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 NCE Educational Consultants Uganda. All rights reserved.</p>
+  </footer>
+
+  <!-- JS for mobile toggle -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      menuToggle.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

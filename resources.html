@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Resources | NCE Educational Consultants Uganda</title>
+  <meta name="description" content="Browse tutor profiles and the latest uploaded learning materials from NCE Educational Consultants Uganda.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Slider Styles */
+    .slider-section {
+      padding: 80px 40px;
+      background: var(--section-contrast);
+      text-align: center;
+    }
+
+    .slider-section h2 {
+      font-family: var(--heading-font);
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    .slider::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .slider::-webkit-scrollbar-thumb {
+      background: var(--accent);
+      border-radius: 5px;
+    }
+
+    .slide-card {
+      background: white;
+      border-radius: 10px;
+      min-width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .slide-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .slide-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .slide-card h3 {
+      color: var(--primary);
+      font-family: var(--heading-font);
+      margin-bottom: 5px;
+    }
+
+    .slide-card p {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    footer {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <img src="/images/logo.jpg" alt="NCE Logo">
+      <span>NCE Educational Consultants Uganda</span>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="subjects.html">Subjects</a></li>
+        <li><a href="learning-space.html">Learning Space</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Tutor Profiles Slider -->
+  <section class="slider-section">
+    <h2>Our Tutors</h2>
+    <div class="slider">
+      <div class="slide-card">
+        <img src="tutor1.jpg" alt="Tutor 1">
+        <h3>Mr. Okello</h3>
+        <p>Physics Tutor — Inspiring curiosity through experiments.</p>
+      </div>
+      <div class="slide-card">
+        <img src="tutor2.jpg" alt="Tutor 2">
+        <h3>Ms. Amina</h3>
+        <p>Chemistry Tutor — Making reactions fun and simple.</p>
+      </div>
+      <div class="slide-card">
+        <img src="tutor3.jpg" alt="Tutor 3">
+        <h3>Mr. David</h3>
+        <p>Mathematics Tutor — Helping students think logically.</p>
+      </div>
+      <div class="slide-card">
+        <img src="tutor4.jpg" alt="Tutor 4">
+        <h3>Dr. Grace</h3>
+        <p>Biology Tutor — Exploring life one concept at a time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Uploads Slider -->
+  <section class="slider-section">
+    <h2>Latest Uploaded Materials</h2>
+    <div class="slider">
+      <div class="slide-card">
+        <h3>Organic Chemistry Notes</h3>
+        <p><i class="fa-solid fa-flask"></i> Chemistry • Sept 2025</p>
+      </div>
+      <div class="slide-card">
+        <h3>Algebra Quiz Set</h3>
+        <p><i class="fa-solid fa-square-root-variable"></i> Mathematics • Oct 2025</p>
+      </div>
+      <div class="slide-card">
+        <h3>Newton’s Laws Worksheet</h3>
+        <p><i class="fa-solid fa-atom"></i> Physics • Oct 2025</p>
+      </div>
+      <div class="slide-card">
+        <h3>Genetics Study Guide</h3>
+        <p><i class="fa-solid fa-dna"></i> Biology • Sept 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 NCE Educational Consultants Uganda. All rights reserved.</p>
+  </footer>
+</body>
+</html>

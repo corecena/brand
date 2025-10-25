@@ -1,0 +1,178 @@
+/* About Page Hero Banner */
+.about-hero {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.about-hero h1 {
+  font-family: var(--heading-font);
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 1.1em;
+}
+
+/* About Page Main Section */
+.about-nce-page {
+  background-color: var(--section-contrast);
+  padding: 80px 40px;
+}
+
+.about-nce-page .about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-nce-page .about-text {
+  flex: 1 1 500px;
+}
+
+.about-nce-page .about-text h2 {
+  font-family: var(--heading-font);
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.about-nce-page .about-text p {
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.about-nce-page .about-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.about-nce-page .about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Mission & Vision Section */
+.mission-vision-section {
+  background-color: var(--background);
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.mission-vision-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.mission, .vision {
+  background-color: var(--section-contrast);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.mission:hover, .vision:hover {
+  transform: translateY(-8px);
+}
+
+.mission img, .vision img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.mission h3, .vision h3 {
+  color: var(--accent);
+  font-family: var(--heading-font);
+  margin-bottom: 10px;
+}
+
+/* Team Section */
+.team {
+  background-color: var(--section-contrast);
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.team h2 {
+  font-family: var(--heading-font);
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.team-intro {
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.team-member {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-6px);
+}
+
+.team-member img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-family: var(--heading-font);
+  color: var(--accent);
+  margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-nce-page .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-vision-container {
+    flex-direction: column;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .team-member img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 500px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
